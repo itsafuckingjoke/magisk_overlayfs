@@ -22,3 +22,5 @@ jobs:
         with:
           name: packaged-software
           path: output.tar.gz
+       - name: Check if artifact exists
+          run: ls -l output.tar.gz
